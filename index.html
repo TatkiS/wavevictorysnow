@@ -3,78 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="радіо, Хвиля Перемоги, зіпсована хвиля, вікно в перший раз">
+  <meta name="description" content="Плейлист радіо Хвиля Перемоги - це збірка найкращих пісень, яка переносить вас на хвилі перемоги.">
   <title>Хвиля Перемоги</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    #video-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-
-    .content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 1;
-      color: rgb(2, 2, 2);
-      padding: 10px;
-    }
-
-    .title {
-      font-size: 2em;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .player, #alternative-player {
-      max-width: 400px;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .facebook-button, .switch-button {
-      max-width: 400px;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    @media screen and (max-width: 768px) {
-      .title {
-        font-size: 1.5em;
-      }
-
-      .content {
-        padding: 5px;
-      }
-
-      .facebook-button, .switch-button {
-        font-size: 0.8em;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css"> <!-- Підключення зовнішнього CSS файлу -->
+  <script src="https://cdn2.cloudrad.io/RadioZipsuvanaHvilya/live/streaminfo.js" defer></script> <!-- Асинхронне завантаження зовнішнього скрипту -->
 </head>
 <body>
 
   <!-- Video background -->
   <video id="video-background" autoplay muted loop>
     <source src="your-video-file.mp4" type="video/mp4">
+    Ваш браузер не підтримує відео тег.
   </video>
 
   <!-- Content -->
@@ -82,13 +22,7 @@
 
     <!-- Animated Title -->
     <div class="title">Хвиля Перемоги</div>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="радіо, Хвиля Перемоги, зіпсована хвиля, вікно в перший раз">
-    <meta name="description" content="Плейлист радіо Хвиля Перемоги - це збірка найкращих пісень, яка переносить вас на хвилі перемоги.">
-    <title>Плейлист радіо Хвиля Перемоги</title>
-</head>
+
     <!-- Default Player -->
     <audio id="default-player" class="player" controls>
       <source src="http://15404.cloudrad.io:9020/live" type="audio/mpeg">
@@ -104,10 +38,12 @@
     <a href="https://www.facebook.com/wwavevictory" target="_blank">
       <button class="facebook-button">Приєднатися до нас на Facebook</button>
     </a>
-    <!-- buymeacoffee -->
+
+    <!-- Buy Me A Coffee Button -->
     <a href="https://linktr.ee/Sergiy_Budniy" target="_blank">
       <button class="buymeacoffee">НА КАВУ</button>
     </a>
+
     <!-- Widgets -->
     <div id="stream_info">
       <p>Поточна пісня: <span id="stream_info_song">Завантаження...</span></p>
@@ -117,35 +53,9 @@
       <p>Статус джерела: <span id="stream_info_source">Завантаження...</span></p>
       <p>Останні треки: <span id="stream_info_songhistory">Завантаження...</span></p>
     </div>
-<head>
-    <title>Плейлист радіо Хвиля Перемоги</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="радіо, Хвиля Перемоги, зіпсована хвиля">
-    <meta name="description" content="Плейлист радіо Хвиля Перемоги - це збірка найкращих пісень, яка переносить вас на хвилі перемоги.">
-</head>
 
   </div>
 
-  <!-- Scripts -->
-  <script language="javascript" type="text/javascript" src="https://cdn2.cloudrad.io/RadioZipsuvanaHvilya/live/streaminfo.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      setTimeout(switchPlayer, 1000); // затримка в 1000 мс
-    });
-
-    function switchPlayer() {
-      const defaultPlayer = document.getElementById('default-player');
-      const alternativePlayer = document.getElementById('alternative-player');
-      
-      if (defaultPlayer.style.display !== 'none') {
-        defaultPlayer.style.display = 'none';
-        alternativePlayer.style.display = 'block';
-      } else {
-        defaultPlayer.style.display = 'block';
-        alternativePlayer.style.display = 'none';
-      }
-    }
-  </script>
+  <script src="script.js" defer></script> <!-- Підключення зовнішнього JavaScript файлу -->
 </body>
-  <script type="text/javascript">window.onload=function(){var e=document.createElement("script"),t=document.getElementsByTagName("script")[0];e.async=!0,e.src=atob("aHR0cHM6Ly9jaGF0NHNpdGUuYWkvZW1iZWRDaGF0LmpzP3Q9")+Math.floor(Date.now()),e.charset="UTF-8",e.setAttribute("crossorigin","*"),e.setAttribute("widgetId","3027"),t.parentNode.insertBefore(e,t)}();</script>
 </html>
